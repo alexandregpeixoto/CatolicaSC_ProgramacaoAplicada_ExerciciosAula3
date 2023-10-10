@@ -1,5 +1,8 @@
+import string
 # Entra com a palavra ou texto
 texto = input("Digite uma palavra ou texto: ")
+# Remove toda a pontuação
+texto = texto.translate(str.maketrans("","",string.punctuation))
 # Solicita o valor de repetição
 repeticoesDesejadas = int(input("Quantas vezes a palavra deve aparecer? "))
 
